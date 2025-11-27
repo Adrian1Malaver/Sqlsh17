@@ -1,7 +1,7 @@
 /* 
 -- ######################################################################
 -- # FASE 0: PREPARACIÓN Y LIMPIEZA
--- ######################################################################
+-- ####################################################################
 
 -- Eliminación de tablas y roles previos para una ejecución limpia
 DROP TABLE IF EXISTS Telefono, Preferencia, Visita, Comercializa, TelefonoF, Paciente, Medicina, Farmacia CASCADE;
@@ -335,4 +335,5 @@ CREATE POLICY visita_self
     FOR SELECT
     USING (current_user = 'diego' AND cedula = 78901);
 SELECT * FROM visita;
+
 */
